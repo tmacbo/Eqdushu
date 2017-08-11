@@ -1,4 +1,4 @@
-package com.tmacbo.eqdushu;
+package com.tmacbo.eqdushu.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.tmacbo.eqdushu.R;
 
 public class ScrollingActivity extends AppCompatActivity {
 

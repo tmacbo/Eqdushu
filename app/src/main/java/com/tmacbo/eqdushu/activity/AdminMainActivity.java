@@ -1,5 +1,7 @@
 package com.tmacbo.eqdushu.activity;
 
+import android.support.v7.app.AppCompatActivity;
+
 /**
  * @Author tmacbo
  * @Since on 2017/8/10  12:46
@@ -7,5 +9,5 @@ package com.tmacbo.eqdushu.activity;
  * @Description TODO
  */
 
-public class AdminMainActivity {
+public class AdminMainActivity extends AppCompatActivity {
 }

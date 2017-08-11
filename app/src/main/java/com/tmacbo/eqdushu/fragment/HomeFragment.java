@@ -1,17 +1,24 @@
 package com.tmacbo.eqdushu.fragment;
 
-import android.app.ActivityOptions;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.transition.Explode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.tmacbo.eqdushu.R;
+import com.tmacbo.eqdushu.activity.QRScanActivity;
+import com.tmacbo.eqdushu.utils.permissionlib.PerUtils;
+import com.tmacbo.eqdushu.utils.permissionlib.PerimissionsCallback;
+import com.tmacbo.eqdushu.utils.permissionlib.PermissionEnum;
+import com.tmacbo.eqdushu.utils.permissionlib.PermissionManager;
+
+import java.util.ArrayList;
 
 
 /**
@@ -23,62 +30,54 @@ import com.tmacbo.eqdushu.R;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
     private TextView textView;
+    private TextView textViewScan;
+    private ImageView imageAddBook;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
-        textView = (TextView) rootView.findViewById(R.id.section_label);
-        textView.setText("HomeFragment");
+        addAction(rootView);
         return rootView;
     }
 
+    public void addAction(View rootView) {
+        textView = (TextView) rootView.findViewById(R.id.section_label);
+        textViewScan = (TextView) rootView.findViewById(R.id.textViewScan);
+        imageAddBook = (ImageView) rootView.findViewById(R.id.imageAddBook);
 
-//    public void onSomeButtonClicked(View view) {
-//        getActivity().getWindow().setExitTransition(new Explode());
-//        Intent intent = new Intent(getContext(), LoginActivity.class);
-//        startActivity(intent,
-//                ActivityOptions
-//                        .makeSceneTransitionAnimation(getActivity()).toBundle());
-//    }
+        textViewScan.setOnClickListener(this);
+        textView.setText("HomeFragment");
+    }
+
 
     @Override
     public void onClick(View view) {
+        if (view == textViewScan) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                PermissionManager
+                        .with(getActivity())
+                        .tag(10)
+                        .permission(PermissionEnum.CAMERA, PermissionEnum.WRITE_EXTERNAL_STORAGE)
+                        .callback(new PerimissionsCallback() {
+                            @Override
+                            public void onGranted(ArrayList<PermissionEnum> grantedList) {
+                                startActivity(new Intent(getActivity(), QRScanActivity.class));
+                            }
 
-//        if (view == mTextMessage) {
-//            onSomeButtonClicked(view);
-//        }
+                            @Override
+                            public void onDenied(ArrayList<PermissionEnum> deniedList) {
+                                PerUtils.PermissionDenied(getActivity(), deniedList);
+                            }
+                        })
+                        .checkAsk();
+            } else {
+                if (PerUtils.cameraIsCanUse()) {
+                    startActivity(new Intent(getActivity(), QRScanActivity.class));
+                } else {
+                    PerUtils.PermissionDenied(getActivity(), PermissionEnum.CAMERA);
+                }
+            }
+        }
     }
-
-//    /**
-//     * A placeholder fragment containing a simple view.
-//     */
-//    public static class PlaceholderFragment extends Fragment {
-//        /**
-//         * The fragment argument representing the section number for this
-//         * fragment.
-//         */
-//
-//
-//        public PlaceholderFragment() {
-//        }
-//
-//        /**
-//         * Returns a new instance of this fragment for the given section
-//         * number.
-//         */
-//        public static PlaceholderFragment newInstance(int sectionNumber) {
-//            PlaceholderFragment fragment = new PlaceholderFragment();
-//            Bundle args = new Bundle();
-//            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-//            fragment.setArguments(args);
-//            return fragment;
-//        }
-//
-//        @Override
-//        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//                                 Bundle savedInstanceState) {
-//
-//        }
-//    }
 }

@@ -35,4 +35,139 @@
         completions."
     </string>
     <string name="title_activity_home">HomeActivity</string>
+
+    <string name="user_about_us">目邻健康是一款全方位的眼健康管理应用，可以随时随地监控自己的眼健康状况和在线咨询专业眼科医生，同时连接线下的眼健康医疗产品为用户提供专业检查和治疗服务。</string>
+    <string name="eye_copyright_zh">© 2016 极视互联，All rights reserved</string>
+    <string name="eye_copyright_en">©极视互联</string>
+    <string name="exit_string">退出</string>
+    <string name="xfq_err_net_error">网络请求异常</string>
+    <!-- 快速提问-->
+    <string name="button_submit">提交</string>
+    <string name="ask_record">我的问诊</string>
+    <string name="ask_next">下一步</string>
+    <string name="ask_select_tag">选择提问标签</string>
+    <!-- 会显示在网络错误界面 -->
+    <string name="xfq_err_parser_error">解析异常</string>
+    <!-- 会显示在提示错误界面 -->
+    <string name="xfq_err_no_data">还没有内容哦</string>
+    <string name="xfq_err_no_sysdata">暂无系统消息</string>
+    <string name="xfq_err_no_orderdata">暂无预约</string>
+    <!-- 会显示在提示错误界面 -->
+
+    <string name="jyq_err_version_title">版本更新</string>
+    <string name="jyq_update">立即更新</string>
+    <string name="jyq_ignore">忽略更新</string>
+    <!-- 常用 -->
+    <string name="btn_confirm_str">确 认</string>
+    <string name="btn_cancel_str">取 消</string>
+    <string name="btn_continue_str">继续浏览</string>
+
+    <string name="permission_explain">你已拒绝访问%1$s权限,请前往设置中心打开权限</string>
+    <string name="per_setting">设置</string>
+    <string name="per_cancle">取消</string>
+
+    <!-- 二维码界面 -->
+    <string name="title_name_qr">二维码/条码</string>
+    <string name="tips_scan">将二维码/条码放入框内, 即可自动扫描</string>
+    <string name="tips_scan_bottom">手动输入条形码</string>
+
+    <!-- 登录界面 -->
+    <string name="btn_login_str">登录</string>
+    <string name="edv_login_id_str">手机/邮箱</string>
+    <string name="edv_login_pwd_str">输入密码</string>
+
+    <!-- 患者详情 -->
+    <string name="title_personinfo">个人信息</string>
+
+    <!-- 主界面 -->
+    <string name="main_tab_home">首页</string>
+    <string name="main_tab_news">资讯</string>
+    <string name="main_tab_explorer">发现</string>
+    <string name="main_tab_personal">个人</string>
+
+    <!-- 首页面 -->
+    <string name="home_scan_str">扫一扫</string>
+    <string name="home_add_str">添加医生</string>
+    <string name="home_test_str">视力测试</string>
+    <string name="home_xerophthalmia_str">干眼测试</string>
+    <string name="home_myopia_str">眼镜适配</string>
+    <string name="home_count_str">患者总数</string>
+
+    <string name="lead_welcome">开始体验</string>
+    <string name="lead_test">我知道了</string>
+    <string name="lead_next">下一步</string>
+    <string name="lead_glass">我知道了</string>
+
+    <!-- 我的医生界面 -->
+    <string name="mydoctor_new_str">新的医生</string>
+    <string name="mydoctor_add_str">添加医生</string>
+    <string name="mydoctor_msg_str">图文问诊</string>
+    <string name="mydoctor_work_str">工作单位</string>
+    <string name="mydoctor_chat_str">对话</string>
+    <string name="mydoctor_work_skill">擅长领域</string>
+    <string name="mydoctor_work_introduce">医生简介</string>
+    <string name="mydoctor_work_zl">医生专栏</string>
+    <string name="mydoctor_nodoctor_str">暂无医生好友</string>
+    <string name="mydoctor_nonewdoctor_str">暂无医生添加申请</string>
+    <string name="mydoctor_adddoctor_str">立即添加</string>
+    <!-- 图片选取，二维码 -->
+    <string name="tips_open_camera_error">打开相机失败,请确保允许应用使用相机权限后重试!</string>
+    <string name="tips_decode_null">未发现二维码</string>
+    <string name="title_image_picker">本地相册</string>
+
+    <string name="input_quick_hospital">串联预约</string>
+    <!-- 医生界面 -->
+    <string name="tv_username_str">用户名</string>
+    <string name="tv_phone_str">手机</string>
+    <string name="tv_email_str">邮箱</string>
+    <string name="tv_editpwd_str">密码修改</string>
+    <string name="btn_logout_str">退出登录</string>
+
+    <!-- 密码修改页面 -->
+    <string name="title_edpwd">密码修改</string>
+    <string name="tv_oldpwd_str">原密码:</string>
+    <string name="et_oldpwd_str">请输入原密码</string>
+    <string name="tv_newpwd_str">新密码:</string>
+    <string name="et_newpwd_str">密码需要是6-10位字母,或其他字符</string>
+    <string name="tv_confirmpwd_str">确认密码:</string>
+    <string name="et_confirmpwd_str">请再次填写密码</string>
+
+    <!-- 退出时的确认框 -->
+    <string name="btn_exit_str">退出程序</string>
+
+    <!-- 加载大图页面 -->
+    <string name="tv_loading_str">加载中,请稍后...</string>
+    <string name="tv_loading_fail_str">图片加载失败</string>
+    <string name="dialog_loading_title_str">浏览大图提醒</string>
+    <string name="dialog_loading_msg_str">原图文件较大,建议在wifi环境下浏览</string>
+
+    <string name="auth_camer_now">拍照</string>
+    <string name="auth_camer_choose">相册选择</string>
+
+
+    <string name="answer_sendmsg_close"> 屏蔽问题推送</string>
+    <string name="answer_msg_clear"> 清空消息记录</string>
+
+    <!--=====眼健康评估（start）-->
+    <string name="txt_assess_result_header_tip">眼健康综合指数</string>
+
+    <!--======眼健康评估（end）-->
+
+    <!--干眼测试-->
+    <string name="dryeye_tip">\u3000\u3000干眼是现代社会常见的问题。因为随着社会的发展，用电子设备（如电脑、手机等）的时间大大增加，长时间面对屏幕容易导致眨眼次数减少，引起眼睛干涩、异物感、眼痛、眼胀、视物模糊等症状，这些症状都有干眼的可能。但是要确诊干眼，是要到专业医疗机构进行相关检查，常见的检查有泪液分泌实验（&#060;10mm说明泪液分泌不足）和泪膜破裂时间（&#060;10s说明泪膜不稳定）。如果您已确诊为干眼，应当根据医生的医嘱，按需点眼药水或者接受熏蒸、睑板腺按摩等治疗。</string>
+    <!--权限监测-->
+    <string name="err_permission_title">我们需要一些权限</string>
+    <string name="err_permission_msg">磁盘存取权限，为您存储个人信息；获取电话信息，保障您的账户安全；否则，您将无法正常使用聚有钱</string>
+    <string name="err_permission_positive">重新授权</string>
+
+    <string name="ask_tips">医生的回复仅为建议，具体诊疗请前往医院进行。</string>
+    <string name="evaluate_tips">您对医生的服务满意吗？</string>
+
+    <string name="err_set_pass_error">重新验证登录？</string>
+    <string name="err_user_authorize_title">登录失效</string>
+    <string name="err_user_authorize_info">用户登录已被注销或超过时限，请重新登录。</string>
+    <string name="err_user_authorize_yes">重新登录</string>
+    <string name="err_user_authorize_no">暂不登录</string>
+
+
 </resources>

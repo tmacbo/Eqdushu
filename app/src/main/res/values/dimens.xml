@@ -7,4 +7,16 @@
     <dimen name="text_margin">16dp</dimen>
 
     <dimen name="app_bar_height">180dp</dimen>
+
+    <!--字体大小-->
+    <dimen name="z00">@dimen/x100</dimen>
+    <dimen name="z0">@dimen/x80</dimen>
+    <dimen name="z1">@dimen/x68</dimen>
+    <dimen name="z2">@dimen/x60</dimen>
+    <dimen name="z3">@dimen/x48</dimen>
+    <dimen name="z4">@dimen/x40</dimen>
+    <dimen name="z5">@dimen/x34</dimen>
+    <dimen name="z6">@dimen/x30</dimen>
+
+    <dimen name="statusbar_view_height">10dp</dimen>
 </resources>

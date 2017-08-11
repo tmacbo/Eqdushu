@@ -9,7 +9,7 @@
         android:background="@color/colorPrimary">
 
         <TextView
-            android:id="@+id/tv_scan"
+            android:id="@+id/textViewScan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -19,7 +19,7 @@
             android:textSize="13sp" />
 
         <ImageView
-            android:id="@+id/tv_mycode"
+            android:id="@+id/imageAddBook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right|center_vertical"
@@ -27,5 +27,15 @@
             android:src="@drawable/ic_notifications_black_24dp" />
 
     </FrameLayout>
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:text="书库"
+        android:textColor="@android:color/background_light"
+        android:textSize="13sp" />
 
 </RelativeLayout>
